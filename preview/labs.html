@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Labs · ThreatNova CyberLabs</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      fontFamily: { sans: ['Inter','ui-sans-serif','system-ui','sans-serif'],
+                     mono: ['JetBrains Mono','ui-monospace','monospace'] }
+    }}}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+    .grid-glow { background-image: radial-gradient(circle at 30% 10%, rgba(34,211,238,0.10), transparent 40%),
+                                     radial-gradient(circle at 80% 0%, rgba(16,185,129,0.08), transparent 35%); }
+    .prose-tn h2 { font-size:1.25rem; font-weight:700; color:#f1f5f9; margin:1.4rem 0 .6rem; }
+    .prose-tn h3 { font-size:1.05rem; font-weight:600; color:#e2e8f0; margin:1.1rem 0 .5rem; }
+    .prose-tn p  { color:#cbd5e1; line-height:1.7; margin:.6rem 0; }
+    .prose-tn ul { list-style:disc; margin:.6rem 0 .6rem 1.4rem; color:#cbd5e1; }
+    .prose-tn li { margin:.25rem 0; }
+    .prose-tn code { background:#1e293b; color:#67e8f9; padding:.1rem .35rem; border-radius:.3rem; font-family:'JetBrains Mono',monospace; font-size:.85em; }
+    .prose-tn pre { background:#0b1220; border:1px solid #1e293b; border-radius:.6rem; padding:1rem; overflow-x:auto; margin:.8rem 0; }
+    .prose-tn pre code { background:none; color:#e2e8f0; padding:0; }
+    .prose-tn strong { color:#f1f5f9; }
+    @media print {
+      header, footer, .no-print { display: none !important; }
+      body { background: #fff !important; }
+      main { padding: 0 !important; max-width: none !important; }
+      #cert { box-shadow: none !important; border-color: #94a3b8 !important; }
+    }
+  </style>
+</head>
+<body class="h-full bg-slate-950 text-slate-200 grid-glow"><div style="background:#0891b2;color:#fff;text-align:center;padding:8px 12px;font-family:Inter,sans-serif;font-size:13px">Static visual preview of <b>ThreatNova CyberLabs</b> - forms/login are inert here. Run <code style="background:#0e7490;padding:1px 5px;border-radius:4px">python3.12 run.py</code> for the fully interactive app.</div>
+  
+    <header class="sticky top-0 z-40 border-b border-slate-800/80 bg-slate-950/80 backdrop-blur">
+      <nav class="mx-auto max-w-7xl px-4 sm:px-6 h-16 flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-2 font-semibold text-white">
+          <span class="text-xl">🛡️</span>
+          <span>ThreatNova <span class="text-cyan-400">CyberLabs</span></span>
+        </a>
+        <div class="hidden md:flex items-center gap-6"><a href="dashboard.html" class="text-sm text-slate-300 hover:text-white transition">Dashboard</a><a href="courses.html" class="text-sm text-slate-300 hover:text-white transition">Courses</a><a href="labs.html" class="text-sm text-slate-300 hover:text-white transition">Labs</a><a href="certificates.html" class="text-sm text-slate-300 hover:text-white transition">My Certificates</a></div>
+        
+          <div class="flex items-center gap-3">
+            <span class="hidden sm:inline text-xs text-slate-400">Sam Student</span>
+            <span class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium ring-1 ring-inset bg-sky-500/15 text-sky-300 ring-sky-500/30">STUDENT</span>
+            <a href="#" class="text-sm rounded-lg bg-slate-800 hover:bg-slate-700 px-3 py-1.5 text-slate-200">Log out</a>
+          </div>
+      </nav>
+    </header>
+  <main class="mx-auto max-w-7xl px-4 sm:px-6 py-8">
+    <div class="flex flex-wrap items-end justify-between gap-4 mb-6">
+      <div>
+        <h1 class="text-2xl sm:text-3xl font-bold text-white">Hands-on labs</h1>
+        <p class="mt-1 text-slate-400">Capture-the-flag challenges. Submit the flag to score points.</p>
+      </div>
+      <div class="flex items-center gap-2"></div>
+    </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"><div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 ">
+          <div class="flex items-start justify-between"><span class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium ring-1 ring-inset bg-rose-500/15 text-rose-300 ring-rose-500/30">Advanced</span><span class="text-xs text-slate-500">150 pts</span></div>
+          <h3 class="mt-2 font-semibold text-white">Key Exchange Logic</h3>
+          <p class="mt-1 text-sm text-slate-400 line-clamp-2">During a TLS handshake, the parties must agree on a shared symmetric key without ever sending it in the clear. They use a famous algorithm for this key exchange.
+</p>
+          <div class="mt-3 text-xs text-slate-500">from Cryptography Essentials</div>
+          <a href="#" class="mt-3 inline-block text-sm text-cyan-400 hover:text-cyan-300">
+            Enroll to access →</a></div><div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 ">
+          <div class="flex items-start justify-between"><span class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium ring-1 ring-inset bg-emerald-500/15 text-emerald-300 ring-emerald-500/30">Beginner</span><span class="text-xs text-emerald-300">Solved ✅</span></div>
+          <h3 class="mt-2 font-semibold text-white">Decode the Intercepted Message</h3>
+          <p class="mt-1 text-sm text-slate-400 line-clamp-2">Your SOC intercepted a suspicious string being exfiltrated from a workstation. It looks Base64-encoded:
+
+```
+ZmxhZ3tiYXNlNjRfaXNfbm90X2VuY3J5cHRpb259
+```
+</p>
+          <div class="mt-3 text-xs text-slate-500">from Cybersecurity Fundamentals</div>
+          <a href="#" class="mt-3 inline-block text-sm text-cyan-400 hover:text-cyan-300">
+            Open lab →</a></div><div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 ">
+          <div class="flex items-start justify-between"><span class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium ring-1 ring-inset bg-emerald-500/15 text-emerald-300 ring-emerald-500/30">Beginner</span><span class="text-xs text-emerald-300">Solved ✅</span></div>
+          <h3 class="mt-2 font-semibold text-white">Classify the Risk</h3>
+          <p class="mt-1 text-sm text-slate-400 line-clamp-2">A web server runs an outdated library with a publicly known remote code execution bug. The server is internet-facing and processes customer payments.
+</p>
+          <div class="mt-3 text-xs text-slate-500">from Cybersecurity Fundamentals</div>
+          <a href="#" class="mt-3 inline-block text-sm text-cyan-400 hover:text-cyan-300">
+            Open lab →</a></div><div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 ">
+          <div class="flex items-start justify-between"><span class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium ring-1 ring-inset bg-emerald-500/15 text-emerald-300 ring-emerald-500/30">Beginner</span><span class="text-xs text-slate-500">90 pts</span></div>
+          <h3 class="mt-2 font-semibold text-white">Name That Port</h3>
+          <p class="mt-1 text-sm text-slate-400 line-clamp-2">An nmap scan of a server shows a single open port used for encrypted remote shell access:
+
+```
+PORT   STATE SERVICE
+22/tcp open  ssh
+```
+</p>
+          <div class="mt-3 text-xs text-slate-500">from Network Security &amp; Defense</div>
+          <a href="#" class="mt-3 inline-block text-sm text-cyan-400 hover:text-cyan-300">
+            Enroll to access →</a></div><div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 ">
+          <div class="flex items-start justify-between"><span class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium ring-1 ring-inset bg-emerald-500/15 text-emerald-300 ring-emerald-500/30">Beginner</span><span class="text-xs text-slate-500">90 pts</span></div>
+          <h3 class="mt-2 font-semibold text-white">Report or It Didn&#x27;t Happen</h3>
+          <p class="mt-1 text-sm text-slate-400 line-clamp-2">A junior tester found five critical bugs but never wrote them up. The client received nothing actionable.
+</p>
+          <div class="mt-3 text-xs text-slate-500">from Ethical Hacking &amp; Penetration Testing</div>
+          <a href="#" class="mt-3 inline-block text-sm text-cyan-400 hover:text-cyan-300">
+            Enroll to access →</a></div><div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 ">
+          <div class="flex items-start justify-between"><span class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium ring-1 ring-inset bg-amber-500/15 text-amber-300 ring-amber-500/30">Intermediate</span><span class="text-xs text-slate-500">150 pts</span></div>
+          <h3 class="mt-2 font-semibold text-white">Bypass the Login (SQLi)</h3>
+          <p class="mt-1 text-sm text-slate-400 line-clamp-2">A legacy admin panel builds its login query like this:
+
+```
+SELECT * FROM users WHERE user=&#x27;&lt;input&gt;&#x27; AND pass=&#x27;&lt;input&gt;&#x27;
+```
+There is no input sanitization.</p>
+          <div class="mt-3 text-xs text-slate-500">from Web Application Security: OWASP Top 10</div>
+          <a href="lab.html" class="mt-3 inline-block text-sm text-cyan-400 hover:text-cyan-300">
+            Open lab →</a></div><div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 ">
+          <div class="flex items-start justify-between"><span class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium ring-1 ring-inset bg-amber-500/15 text-amber-300 ring-amber-500/30">Intermediate</span><span class="text-xs text-slate-500">120 pts</span></div>
+          <h3 class="mt-2 font-semibold text-white">Spot the IDOR</h3>
+          <p class="mt-1 text-sm text-slate-400 line-clamp-2">You are logged in as user 57. Your profile loads from `/api/users/57/profile`. Out of curiosity you change the number and the server happily returns another user&#x27;s data.
+</p>
+          <div class="mt-3 text-xs text-slate-500">from Web Application Security: OWASP Top 10</div>
+          <a href="#" class="mt-3 inline-block text-sm text-cyan-400 hover:text-cyan-300">
+            Open lab →</a></div><div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 ">
+          <div class="flex items-start justify-between"><span class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium ring-1 ring-inset bg-amber-500/15 text-amber-300 ring-amber-500/30">Intermediate</span><span class="text-xs text-slate-500">110 pts</span></div>
+          <h3 class="mt-2 font-semibold text-white">Default-Deny Principle</h3>
+          <p class="mt-1 text-sm text-slate-400 line-clamp-2">You are writing firewall rules for a new DMZ. Best practice says to block all traffic first, then explicitly permit only required flows.
+</p>
+          <div class="mt-3 text-xs text-slate-500">from Network Security &amp; Defense</div>
+          <a href="#" class="mt-3 inline-block text-sm text-cyan-400 hover:text-cyan-300">
+            Enroll to access →</a></div><div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 ">
+          <div class="flex items-start justify-between"><span class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium ring-1 ring-inset bg-amber-500/15 text-amber-300 ring-amber-500/30">Intermediate</span><span class="text-xs text-slate-500">130 pts</span></div>
+          <h3 class="mt-2 font-semibold text-white">Caesar&#x27;s Secret</h3>
+          <p class="mt-1 text-sm text-slate-400 line-clamp-2">During recon you find a config comment left by a lazy developer. It is &#x27;encrypted&#x27; with a Caesar cipher shifted by 3:
+
+```
+iodj{fdhvdu_vkliw_wkuhh}
+```
+</p>
+          <div class="mt-3 text-xs text-slate-500">from Ethical Hacking &amp; Penetration Testing</div>
+          <a href="#" class="mt-3 inline-block text-sm text-cyan-400 hover:text-cyan-300">
+            Enroll to access →</a></div><div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 ">
+          <div class="flex items-start justify-between"><span class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium ring-1 ring-inset bg-amber-500/15 text-amber-300 ring-amber-500/30">Intermediate</span><span class="text-xs text-slate-500">120 pts</span></div>
+          <h3 class="mt-2 font-semibold text-white">First Move After Detection</h3>
+          <p class="mt-1 text-sm text-slate-400 line-clamp-2">Malware is confirmed active on a finance workstation and beaconing to a C2 server. You must stop it spreading before eradicating it.
+</p>
+          <div class="mt-3 text-xs text-slate-500">from SOC Analyst &amp; Incident Response</div>
+          <a href="#" class="mt-3 inline-block text-sm text-cyan-400 hover:text-cyan-300">
+            Enroll to access →</a></div><div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 ">
+          <div class="flex items-start justify-between"><span class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium ring-1 ring-inset bg-amber-500/15 text-amber-300 ring-amber-500/30">Intermediate</span><span class="text-xs text-slate-500">130 pts</span></div>
+          <h3 class="mt-2 font-semibold text-white">Hash the Evidence</h3>
+          <p class="mt-1 text-sm text-slate-400 line-clamp-2">To preserve integrity of a collected malware sample, analysts compute a cryptographic hash. The team standard is the 256-bit member of the SHA-2 family.
+</p>
+          <div class="mt-3 text-xs text-slate-500">from SOC Analyst &amp; Incident Response</div>
+          <a href="#" class="mt-3 inline-block text-sm text-cyan-400 hover:text-cyan-300">
+            Enroll to access →</a></div><div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 ">
+          <div class="flex items-start justify-between"><span class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium ring-1 ring-inset bg-amber-500/15 text-amber-300 ring-amber-500/30">Intermediate</span><span class="text-xs text-slate-500">120 pts</span></div>
+          <h3 class="mt-2 font-semibold text-white">Pick the Right Password Hash</h3>
+          <p class="mt-1 text-sm text-slate-400 line-clamp-2">A developer stored passwords as unsalted MD5. You must recommend a modern, deliberately slow, salted password-hashing function whose name starts with &#x27;b&#x27;.
+</p>
+          <div class="mt-3 text-xs text-slate-500">from Cryptography Essentials</div>
+          <a href="#" class="mt-3 inline-block text-sm text-cyan-400 hover:text-cyan-300">
+            Enroll to access →</a></div></div></main>
+  <footer class="border-t border-slate-800/80 mt-16">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-8 text-sm text-slate-500 flex flex-col sm:flex-row justify-between gap-2">
+      <span>© ThreatNova Security · CyberLabs Training Platform</span>
+      <span>Built for hands-on cybersecurity certification</span>
+    </div>
+  </footer>
+</body>
+</html>

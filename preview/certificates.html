@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Certificates · ThreatNova CyberLabs</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      fontFamily: { sans: ['Inter','ui-sans-serif','system-ui','sans-serif'],
+                     mono: ['JetBrains Mono','ui-monospace','monospace'] }
+    }}}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+    .grid-glow { background-image: radial-gradient(circle at 30% 10%, rgba(34,211,238,0.10), transparent 40%),
+                                     radial-gradient(circle at 80% 0%, rgba(16,185,129,0.08), transparent 35%); }
+    .prose-tn h2 { font-size:1.25rem; font-weight:700; color:#f1f5f9; margin:1.4rem 0 .6rem; }
+    .prose-tn h3 { font-size:1.05rem; font-weight:600; color:#e2e8f0; margin:1.1rem 0 .5rem; }
+    .prose-tn p  { color:#cbd5e1; line-height:1.7; margin:.6rem 0; }
+    .prose-tn ul { list-style:disc; margin:.6rem 0 .6rem 1.4rem; color:#cbd5e1; }
+    .prose-tn li { margin:.25rem 0; }
+    .prose-tn code { background:#1e293b; color:#67e8f9; padding:.1rem .35rem; border-radius:.3rem; font-family:'JetBrains Mono',monospace; font-size:.85em; }
+    .prose-tn pre { background:#0b1220; border:1px solid #1e293b; border-radius:.6rem; padding:1rem; overflow-x:auto; margin:.8rem 0; }
+    .prose-tn pre code { background:none; color:#e2e8f0; padding:0; }
+    .prose-tn strong { color:#f1f5f9; }
+    @media print {
+      header, footer, .no-print { display: none !important; }
+      body { background: #fff !important; }
+      main { padding: 0 !important; max-width: none !important; }
+      #cert { box-shadow: none !important; border-color: #94a3b8 !important; }
+    }
+  </style>
+</head>
+<body class="h-full bg-slate-950 text-slate-200 grid-glow"><div style="background:#0891b2;color:#fff;text-align:center;padding:8px 12px;font-family:Inter,sans-serif;font-size:13px">Static visual preview of <b>ThreatNova CyberLabs</b> - forms/login are inert here. Run <code style="background:#0e7490;padding:1px 5px;border-radius:4px">python3.12 run.py</code> for the fully interactive app.</div>
+  
+    <header class="sticky top-0 z-40 border-b border-slate-800/80 bg-slate-950/80 backdrop-blur">
+      <nav class="mx-auto max-w-7xl px-4 sm:px-6 h-16 flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-2 font-semibold text-white">
+          <span class="text-xl">🛡️</span>
+          <span>ThreatNova <span class="text-cyan-400">CyberLabs</span></span>
+        </a>
+        <div class="hidden md:flex items-center gap-6"><a href="dashboard.html" class="text-sm text-slate-300 hover:text-white transition">Dashboard</a><a href="courses.html" class="text-sm text-slate-300 hover:text-white transition">Courses</a><a href="labs.html" class="text-sm text-slate-300 hover:text-white transition">Labs</a><a href="certificates.html" class="text-sm text-slate-300 hover:text-white transition">My Certificates</a></div>
+        
+          <div class="flex items-center gap-3">
+            <span class="hidden sm:inline text-xs text-slate-400">Sam Student</span>
+            <span class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium ring-1 ring-inset bg-sky-500/15 text-sky-300 ring-sky-500/30">STUDENT</span>
+            <a href="#" class="text-sm rounded-lg bg-slate-800 hover:bg-slate-700 px-3 py-1.5 text-slate-200">Log out</a>
+          </div>
+      </nav>
+    </header>
+  <main class="mx-auto max-w-7xl px-4 sm:px-6 py-8">
+    <div class="flex flex-wrap items-end justify-between gap-4 mb-6">
+      <div>
+        <h1 class="text-2xl sm:text-3xl font-bold text-white">My certificates</h1>
+        <p class="mt-1 text-slate-400">Your verifiable ThreatNova credentials.</p>
+      </div>
+      <div class="flex items-center gap-2"></div>
+    </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"><div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 ">
+          <div class="flex items-start justify-between">
+            <div class="text-3xl">🏅</div><span class="text-xs text-emerald-300">Valid</span>
+          </div>
+          <h3 class="mt-2 font-semibold text-white">Cybersecurity Fundamentals</h3>
+          <div class="mt-1 text-sm text-slate-400">Foundations · Score 80%</div>
+          <div class="mt-2 font-mono text-xs text-cyan-300">TN-7A2K-8UBX-JWX3</div>
+          <div class="mt-4 flex gap-3">
+            <a href="certificate.html" class="text-sm text-cyan-400 hover:text-cyan-300">View & print →</a>
+          </div></div></div></main>
+  <footer class="border-t border-slate-800/80 mt-16">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-8 text-sm text-slate-500 flex flex-col sm:flex-row justify-between gap-2">
+      <span>© ThreatNova Security · CyberLabs Training Platform</span>
+      <span>Built for hands-on cybersecurity certification</span>
+    </div>
+  </footer>
+</body>
+</html>
